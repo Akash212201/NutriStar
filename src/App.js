@@ -17,7 +17,7 @@ const App =()=> {
       <HeroSlider />
       <TopCategories/>
       <Brands />
-      
+      <DealsDay/>
       <Blogs/>
       <Footer/>
       
