@@ -5,6 +5,7 @@ import { MdOutlineShoppingBag } from 'react-icons/md';
 import { IoLocationSharp } from "react-icons/io5";
 import { IoMdArrowDropdown, IoMdHelpBuoy } from "react-icons/io";
 import logo from '../assests/logo.svg'
+import Navbar from './Navbar';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
     };
 
     return (
-        <header >
+        <header className='shadow-[0px_6px_15px_0px_#00000033]'>
             <div className='text-center bg-[#fcae2a] text-white py-1 text-[14px]'>Get Extra Off on Nutristar App, Code: APPONLY</div>
             <div className="flex justify-between items-center bg-white py-4 px-6">
          
@@ -67,6 +68,7 @@ const Header = () => {
                 </div>
             </div>
             </div>
+            <Navbar />
         </header>
     );
 };

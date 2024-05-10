@@ -37,11 +37,11 @@ const HeroSlider = () => {
     };
     return (
         <div className="slider-container flex justify-center items-center flex-col py-2">
-            <div className=" w-[80%] pb-10 overflow-hidden h-[260px]">
+            <div className=" w-[80%] pb-10 overflow-hidden h-[250px] rounded-3xl">
                 <Slider {...settings}>
                     {bannerImages.map((image, idx) => (
                         <div key={idx} className=" rounded-3xl w-full overflow-hidden h-[260px]">
-                            <img src={image} alt="" className="w-full lg:object-cover object-center object-fill min-h-[260] h-auto  " />
+                            <img src={image} alt="" className="w-full lg:object-cover object-center object-fill h-full  " />
                         </div>
                     ))
                     }
@@ -49,7 +49,7 @@ const HeroSlider = () => {
                 </Slider>
             </div>
                     <div className="flex lg:flex-row flex-col justify-center items-center">
-                        <h1 className="text-center text-[12px]">How to be Sure that I will Get a Genuine Product?</h1>
+                        <h1 className="text-center lg:text-[14px] text-[12px]">How to be Sure that I will Get a Genuine Product?</h1>
                         <button className="bg-[#333] rounded-[30px] my-2 px-4 py-[6px] text-[#f3f3f3] mx-5">Know More</button>
                     </div>
         </div>

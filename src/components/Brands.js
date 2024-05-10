@@ -19,7 +19,8 @@ const Brands = () => {
         bannerImg6,
     ]
     return (
-        <div className='lg:mx-[10vw] mx-[5vw] py-[5rem]'>
+        <div className='bg-[#333]'>
+            <div className='lg:px-[10vw] px-[5vw] py-[5rem] bg-[#f6f6f6] rounded-bl-[10rem]'>
             <div className='flex justify-between items-center uppercase'>
                 <h1 className='lg:text-4xl text-xl font-semibold uppercase '>Our Trusted Brands</h1>
                 <span className='underline text-[#fcae2a] font-semibold cursor-pointer'>view all</span>
@@ -35,6 +36,7 @@ const Brands = () => {
                     ))
                 }
             </div>
+        </div>
         </div>
     )
 }
