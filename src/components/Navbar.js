@@ -30,7 +30,7 @@ const Navbar = () => {
     ]
     return (
         <div className='flex justify-center items-center py-3 px-5'>
-            <ul className='flex lg:justify-center items-center lg:overflow-x-hidden overflow-x-auto '>
+            <ul className='flex pb-2 lg:justify-center items-center lg:overflow-x-hidden overflow-x-auto flex-nowrap whitespace-nowrap'>
                 {
                     navLinks.map((link, idx) => (
                         <Link key={idx} to={link.path} className=''>

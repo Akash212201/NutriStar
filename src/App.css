@@ -21,6 +21,9 @@
    
     width: 30px !important;
 }
+.hero .slick-slider{
+    position: relative !important;
+}
 .slick-slider{
     position: static!important;
 }
@@ -60,7 +63,7 @@
     .products{
        
       
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         grid-gap: 1em;
     }
 }

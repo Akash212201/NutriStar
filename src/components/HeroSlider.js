@@ -36,7 +36,7 @@ const HeroSlider = () => {
         adaptiveHeight: true,
     };
     return (
-        <div className="slider-container flex justify-center items-center flex-col py-2">
+        <div className="hero slider-container flex justify-center items-center flex-col py-2">
             <div className=" w-[80%] pb-10 overflow-hidden h-[250px] rounded-3xl">
                 <Slider {...settings}>
                     {bannerImages.map((image, idx) => (

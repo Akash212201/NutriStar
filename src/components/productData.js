@@ -90,7 +90,7 @@ const productsData = [
     },
     {
         _id: 1112,
-        heading: "best seller",
+        heading: "Best Sellers",
         data: [
             {
                 title: "Nutristar Ultra Premium Whey Protein 58 Servings, 4 Lbs (1.81Kg)",
@@ -299,7 +299,7 @@ const productsData = [
     },
     {
         _id: 1115,
-        heading: "super saver pack",
+        heading: "Clearance Sale",
         data: [
             {
                 title: "Evogen Nutrition AminoJect BCAA - 30 Servings",
