@@ -21,7 +21,9 @@
    
     width: 30px !important;
 }
-
+.slick-slider{
+    position: static!important;
+}
 .blog-container{
     padding-inline: 10vw;
     margin-top: 20px;
@@ -43,6 +45,11 @@
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     grid-gap: 1em;
 }
+.productspage::-webkit-scrollbar {
+    display: none;
+}
+
+
 @media(max-width: 767px){
 
     .brands{

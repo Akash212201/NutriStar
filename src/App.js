@@ -16,7 +16,7 @@ const App =()=> {
     <Router>
       <Header/>
       <HeroSlider />
-      <Products/>a
+      <Products/>
       <TopCategories/>
       <Brands />
       <DealsDay/>

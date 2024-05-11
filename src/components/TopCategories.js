@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import categoryImg1 from '../assests/Categories/vegan-protein.png'
 import categoryImg2 from '../assests/Categories/whey-proteins.png'
@@ -49,8 +49,8 @@ const TopCategories = () => {
     const { onClick } = props
     return (
       <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
-        <button className='z-10 flex justify-center absolute lg:top-[25%] top-[15%] -right-0 items-center rounded-full border lg:w-[40px] lg:h-[40px] w-[35px] h-[35px] border-[#000]'>
-          <FaLongArrowAltRight className="lg:text-3xl text-xl text-black" />
+        <button className='z-10 flex justify-center absolute lg:top-[25%] top-[15%] -right-2 items-center rounded-full border lg:w-[40px] lg:h-[40px] w-[30px] h-[30px] border-[#000]'>
+          <IoMdArrowForward className="lg:text-2xl text-xl text-black" />
         </button>
       </div>
     )
@@ -59,8 +59,8 @@ const TopCategories = () => {
     const { onClick } = props
     return (
       <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
-        <button className='z-10 flex justify-center items-center absolute lg:top-[25%] top-[15%] left-0 rounded-full border lg:w-[40px] lg:h-[40px] w-[35px] h-[35px] border-[#000]'>
-          <FaLongArrowAltLeft className="lg:text-3xl text-xl text-black" />
+        <button className='z-10 flex justify-center items-center absolute lg:top-[25%] top-[15%] -left-2 rounded-full border lg:w-[40px] lg:h-[40px] w-[30px] h-[30px] border-[#000]'>
+          <IoMdArrowBack className="lg:text-2xl text-xl text-black" />
         </button>
       </div>
     )
@@ -103,13 +103,13 @@ const TopCategories = () => {
     ]
   };
   return (
-    <div className='slider-container relative lg:px-[10vw] px-[5vw] lg:py-[3.5rem] pt-[1rem]'>
+    <div className='slider-container lg:px-[10vw] px-[5vw] lg:py-[3.5rem] pt-[1rem]'>
       <div className='flex justify-between items-center uppercase'>
         <h1 className='lg:text-4xl text-lg font-semibold uppercase '>Top Categories</h1>
         <span className='underline text-[#FCAE2A] font-semibold cursor-pointer lg:text-[14px] text-[12px]'>view all</span>
       </div>
 
-      <div className="lg:px-5 px-2 lg:mt-8 mt-4 ">
+      <div className="lg:px-5 px-2 lg:mt-8 mt-4 relative ">
         <Slider {...settings}>
           {
             categoryItems.map((item, idx) => (

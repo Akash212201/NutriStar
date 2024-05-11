@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import dealImg1 from '../assests/DealsDay/pre-workouts-banner.png'
 import dealImg2 from '../assests/DealsDay/l-carnitine-banner-nutristar.png'
@@ -25,8 +25,8 @@ const DealsDay = () => {
     const { onClick } = props
     return (
       <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
-        <button className='z-10 flex justify-center absolute top-[25%] -right-0 items-center rounded-full border w-[40px] h-[40px] border-white'>
-          <FaLongArrowAltRight className="text-3xl text-white" />
+        <button className='z-10 flex justify-center absolute lg:top-[25%] top-[40%] lg:-right-10 right-1 items-center rounded-full w-[40px] h-[40px] bg-white'>
+          <IoMdArrowForward className="text-3xl" />
         </button>
       </div>
     )
@@ -34,9 +34,9 @@ const DealsDay = () => {
   const SamplePrevArrow = (props) => {
     const { onClick } = props
     return (
-      <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
-        <button className='z-10 flex justify-center absolute top-[25%] -left-0 rounded-full border-[2px] w-[40px] h-[40px] border-white'>
-          <FaLongArrowAltLeft className="text-3xl text-white" />
+      <div className="z-10 rounded-full  cursor-pointer" onClick={onClick}>
+        <button className='z-10 flex justify-center bg-white absolute lg:top-[25%] top-[40%] lg:-left-10 left-1 items-center rounded-full w-[40px] h-[40px]'>
+          <IoMdArrowBack className="text-3xl" />
         </button>
       </div>
     )
@@ -64,7 +64,7 @@ const DealsDay = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1
         }
@@ -79,7 +79,7 @@ const DealsDay = () => {
     ]
   };
   return (
-    <div className="lg:rounded-br-[10rem] rounded-br-[4rem] bg-[#333] relative">
+    <div className="lg:rounded-br-[10rem] rounded-br-[4rem] bg-[#333]">
       <div className='slider-container lg:px-[10vw] px-[5vw] py-[5rem] '>
 
         <div className='flex justify-between items-center uppercase mb-4'>
@@ -87,14 +87,14 @@ const DealsDay = () => {
           <span className='underline text-[#FCAE2A] font-semibold cursor-pointer lg:text-[14px] text-[12px]'>view all</span>
         </div>
 
-        <div className="mx-5  ">
+        <div className=" relative mt-12">
           <Slider {...settings}>
             {
               dealsItem.map((item, idx) => (
 
-                <div key={idx} className="flex justify-center items-center overflow-hidden">
-                  <div className="rounded-xl overflow-hidden w-[200px]">
-                    <img src={item} alt="" className="h-[200px] lg:object-cover w-full" />
+                <div key={idx} className="!flex justify-center items-center overflow-hidden">
+                  <div className="rounded-xl overflow-hidden lg:w-[200px] w-[300px]">
+                    <img src={item} alt="" className=" lg:object-cover w-full" />
                   </div>
                 </div>
 

@@ -19,6 +19,7 @@ import bestSellerImg8 from '../assests/Products/Bestseller/8.labrada-muscle.png'
 
 const productsData = [
     {
+        _id: 1111,
         heading: "trending",
         data: [
             {
@@ -88,6 +89,7 @@ const productsData = [
         ]
     },
     {
+        _id: 1112,
         heading: "best seller",
         data: [
             {
@@ -157,6 +159,7 @@ const productsData = [
         ]
     },
     {
+        _id: 1113,
         heading: "pocket friendly",
         data: [
             {
@@ -226,6 +229,7 @@ const productsData = [
         ]
     },
     {
+        _id: 1114,
         heading: "super saver pack",
         data: [
             {
@@ -294,6 +298,7 @@ const productsData = [
         ]
     },
     {
+        _id: 1115,
         heading: "super saver pack",
         data: [
             {
