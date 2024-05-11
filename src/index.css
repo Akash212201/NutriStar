@@ -6,15 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Manrope:wght@200..800&display=swap');
 
 
-:root{
-  --logo-color: #CF2D2D;
-  --background-color: #ffffff;
-  --text-color: #1E2022;
-  --subheading-color: #989090;
-  --border-color: #B0BABF;
-  --font-secondary: "Covered By Your Grace";
-  --font-primary: Manrope;
-}
 body {
   margin: 0;
 }

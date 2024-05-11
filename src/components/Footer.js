@@ -56,7 +56,7 @@ const Footer = () => {
 
 
   return (
-    <div className='lg:px-[14vw] px-[2vw] py-14 bg-[#f6f6f6] text-[#333]'>
+    <div className='lg:px-[14vw] px-[2vw] pt-10 pb-5 bg-[#f6f6f6] text-[#333]'>
       <div className='flex lg:flex-row flex-col '>
         <div className='lg:w-[25%] w-full '>
           <img src={footerLogo} alt="" />
@@ -92,7 +92,7 @@ const Footer = () => {
             }
           </ul>
         </div>
-        <div>
+        <div className=''>
           <div className=''>
           <p className='mb-6 font-semibold text-[16px] uppercase'>Contact Us</p>
             <div className='flex lg:justify-center items-center gap-1'>
@@ -110,16 +110,16 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <div className='flex justify-between  gap-4 my-3'>
-          <span className='text-[12px] font-bold text-[#6C757D]'>WARNING!</span>
-          <p className='text-[#6C757D] text-[12px] mb-2 uppercase'>
+        <div className='flex justify-between  gap-4 my-3 '>
+          <span className='text-[12px] font-bold text-[#6c757d]'>WARNING!</span>
+          <p className='text-[#6c757d] text-[12px] mb-2 uppercase'>
 
             PLEASE ONLY PURCHASE AND USE THE PRODUCTS ON THIS WEBSITE
             IF YOU ARE AGED 18 YEARS AND OVER. PLEASE ENSURE YOU ARE IN
             A GOOD STATE OF HEALTH AND/OR CONSULT YOUR DOCTOR BEFORE STARTING
             A SUPPLEMENT PROGRAMME.</p>
         </div>
-        <div className='text-center mb-4 text-[#6C757D] text-[16px]'>2024 A product of Square Bubbles Pvt. Ltd.</div>
+        <div className='text-center mb-1 text-[#6c757d] text-[16px]'>2024 A product of Square Bubbles Pvt. Ltd.</div>
       </div>
     </div>
   )

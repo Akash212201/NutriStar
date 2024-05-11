@@ -64,27 +64,27 @@ const DealsDay = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
   };
   return (
-    <div className=" rounded-br-[10rem] bg-[#333] relative">
-      <div className='slider-container lg:mx-[10vw] mx-[5vw] py-[5rem] '>
+    <div className="lg:rounded-br-[10rem] rounded-br-[4rem] bg-[#333] relative">
+      <div className='slider-container lg:px-[10vw] px-[5vw] py-[5rem] '>
 
         <div className='flex justify-between items-center uppercase mb-4'>
-          <h1 className='lg:text-4xl text-xl text-white font-semibold uppercase '>Deal of the day</h1>
-          <span className='underline text-[#fcae2a] font-semibold cursor-pointer'>view all</span>
+          <h1 className='lg:text-4xl text-lg text-white font-semibold uppercase '>Deal of the day</h1>
+          <span className='underline text-[#FCAE2A] font-semibold cursor-pointer lg:text-[14px] text-[12px]'>view all</span>
         </div>
 
         <div className="mx-5  ">

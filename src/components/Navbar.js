@@ -33,8 +33,8 @@ const Navbar = () => {
             <ul className='flex lg:justify-center items-center lg:overflow-x-hidden overflow-x-auto '>
                 {
                     navLinks.map((link, idx) => (
-                        <Link to={link.path} className=''>
-                            <li key={idx} className='mx-[1rem] lg:text-[14px] w-full text-[12px] uppercase font-semibold'>
+                        <Link key={idx} to={link.path} className=''>
+                            <li className='mx-[1rem] lg:text-[14px] w-full text-[12px] uppercase font-semibold'>
                                 {link.title}
                             </li>
                         </Link>

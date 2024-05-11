@@ -10,70 +10,70 @@ import categoryImg6 from '../assests/Categories/aminos-and-bcaas.png'
 import categoryImg7 from '../assests/Categories/creatines.png'
 import categoryImg8 from '../assests/Categories/glutamine.png'
 
-const TopCategories = () =>{
-    const categoryItems = [
-        {
-            image: categoryImg1,
-            title: "VEGAN PROTEINS",
-        },
-        {
-            image: categoryImg2,
-            title: "WHEY PROTEINS",
-        },
-        {
-            image: categoryImg3,
-            title: "WHEY ISOLATES",
-        },
-        {
-            image: categoryImg4,
-            title: "MASS GAINERS",
-        },
-        {
-            image: categoryImg5,
-            title: "LEAN MASS GAINERS",
-        },
-        {
-            image: categoryImg6,
-            title: "AMINOS & BCAA's",
-        },
-        {
-            image: categoryImg7,
-            title: "CREATINES",
-        },
-        {
-            image: categoryImg8,
-            title: "GULTAMINES",
-        },
-    ]
-    const SampleNextArrow = (props) => {
-        const { onClick } = props
-        return (
-          <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
-            <button className='z-10 flex justify-center absolute top-[25%] -right-0 items-center rounded-full border w-[40px] h-[40px] border-[#000]'>
-              <FaLongArrowAltRight className="text-3xl text-black" />
-            </button>
-          </div>
-        )
-      }
-      const SamplePrevArrow = (props) => {
-        const { onClick } = props
-        return (
-            <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
-            <button className='z-10 flex justify-center absolute top-[25%] -left-0 rounded-full border-[2px] w-[40px] h-[40px] border-[#000]'>
-              <FaLongArrowAltLeft className="text-3xl text-black"/>
-            </button>
-          </div>
-        )
-      }
+const TopCategories = () => {
+  const categoryItems = [
+    {
+      image: categoryImg1,
+      title: "VEGAN PROTEINS",
+    },
+    {
+      image: categoryImg2,
+      title: "WHEY PROTEINS",
+    },
+    {
+      image: categoryImg3,
+      title: "WHEY ISOLATES",
+    },
+    {
+      image: categoryImg4,
+      title: "MASS GAINERS",
+    },
+    {
+      image: categoryImg5,
+      title: "LEAN MASS GAINERS",
+    },
+    {
+      image: categoryImg6,
+      title: "AMINOS & BCAA's",
+    },
+    {
+      image: categoryImg7,
+      title: "CREATINES",
+    },
+    {
+      image: categoryImg8,
+      title: "GULTAMINES",
+    },
+  ]
+  const SampleNextArrow = (props) => {
+    const { onClick } = props
+    return (
+      <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
+        <button className='z-10 flex justify-center absolute lg:top-[25%] top-[15%] -right-0 items-center rounded-full border lg:w-[40px] lg:h-[40px] w-[35px] h-[35px] border-[#000]'>
+          <FaLongArrowAltRight className="lg:text-3xl text-xl text-black" />
+        </button>
+      </div>
+    )
+  }
+  const SamplePrevArrow = (props) => {
+    const { onClick } = props
+    return (
+      <div className="z-10 rounded-full cursor-pointer" onClick={onClick}>
+        <button className='z-10 flex justify-center items-center absolute lg:top-[25%] top-[15%] left-0 rounded-full border lg:w-[40px] lg:h-[40px] w-[35px] h-[35px] border-[#000]'>
+          <FaLongArrowAltLeft className="lg:text-3xl text-xl text-black" />
+        </button>
+      </div>
+    )
+  }
   var settings = {
     dots: false,
     infinite: false,
-    autoPlay : true, 
+    autoPlay: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 2,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow/>,
+    nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
@@ -96,38 +96,37 @@ const TopCategories = () =>{
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       }
     ]
   };
   return (
-    <div className='slider-container lg:mx-[10vw] mx-[5vw] py-[5rem]'>
-  
-        <div className='flex justify-between items-center uppercase'>
-        <h1 className='lg:text-4xl text-xl font-semibold uppercase '>Top Categories</h1>
-            <span className='underline text-[#fcae2a] font-semibold cursor-pointer'>view all</span>
-        </div>
-       
-      <div className="mx-5 relative ">
-      <Slider {...settings}>
-        {
-            categoryItems.map((item,idx) =>(
-                <div key={idx} className="relative w-[10px] flex justify-center items-center">
-                    <div className="flex justify-center items-center">
-                    <div className="rounded-xl overflow-hidden w-[100px]">
-                        <img src={item?.image} alt="" className="h-[100px]"/>
-                    </div>
-                    </div>
-                    <div className="text-center my-[0.5em] text-[14px]">
-                        {item.title}
-                    </div>
+    <div className='slider-container relative lg:px-[10vw] px-[5vw] lg:py-[3.5rem] pt-[1rem]'>
+      <div className='flex justify-between items-center uppercase'>
+        <h1 className='lg:text-4xl text-lg font-semibold uppercase '>Top Categories</h1>
+        <span className='underline text-[#FCAE2A] font-semibold cursor-pointer lg:text-[14px] text-[12px]'>view all</span>
+      </div>
+
+      <div className="lg:px-5 px-2 lg:mt-8 mt-4 ">
+        <Slider {...settings}>
+          {
+            categoryItems.map((item, idx) => (
+              <div key={idx} className="w-[10px] flex justify-center items-center">
+                <div className="flex justify-center items-center">
+                  <div className="rounded-xl overflow-hidden lg:w-[100px] w-[60px]">
+                    <img src={item?.image} alt="" className="lg:h-[100px] h-[60px]" />
+                  </div>
                 </div>
+                <div className="text-center my-[0.5em] lg:text-[14px] text-[12px]">
+                  {item.title}
+                </div>
+              </div>
             ))
-        }
-        
-      </Slider>
+          }
+
+        </Slider>
       </div>
     </div>
   );
