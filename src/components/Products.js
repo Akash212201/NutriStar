@@ -94,12 +94,12 @@ useEffect(() => {
 
             <div className='lg:hidden py-2'>
                 <ul className="pb-2 flex items-center gap-3 px-2 overflow-x-auto flex-nowrap whitespace-nowrap">
-                    <li className={`cursor-pointer px-8 py-2 rounded-full ${category == 'trending' ? 'bg-[#FCAE2A] text-white border-none' : 'border border-[#b2b2b2] bg-white'}`}>
+                    <li className={`cursor-pointer px-8 py-2 rounded-full ${category === 'trending' ? 'bg-[#FCAE2A] text-white border-none' : 'border border-[#b2b2b2] bg-white'}`}>
                         <button onClick={() => setCategory('trending')} data-toggle="tab">
                             Trending
                         </button>
                     </li>
-                    <li className={`cursor-pointer px-8 py-2 rounded-full ${category == 'Best Sellers' ? 'bg-[#FCAE2A] text-white border-none' : 'border border-[#b2b2b2] bg-white'}`}>
+                    <li className={`cursor-pointer px-8 py-2 rounded-full ${category === 'Best Sellers' ? 'bg-[#FCAE2A] text-white border-none' : 'border border-[#b2b2b2] bg-white'}`}>
                         <button data-toggle="tab"
                         onClick={() => setCategory('Best Sellers')}>
                             Best-Sellers

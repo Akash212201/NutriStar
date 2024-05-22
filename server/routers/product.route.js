@@ -1,6 +1,6 @@
  const express = require("express")
  const router = express.Router();
-const {loginView} = require('../controllers/user')
+const {loginUser} = require('../controllers/user')
 // const { createproduct, showproductInformation,
 //     showAllproducts, editproduct,
 //     getSellerproducts, deleteproduct
@@ -25,5 +25,5 @@ const {loginView} = require('../controllers/user')
 // router.post("/ratingAndReviews", auth, isCustomer, RatingAndReviews)
 // router.post("/getAverageRating", getAverageRating)
 
-router.post('/login',loginView)
+router.post('/login',loginUser)
  module.exports = router;

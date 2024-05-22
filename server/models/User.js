@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
     mobileNumber: {
-        type: Number,
+        type: Number, 
         required: [true, 'Mobile number is required'],
         unique: [true, 'Mobile number should be unique'],
     },
@@ -21,13 +21,12 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: [true, 'password is required'],
+        required: [true, 'email is required'],
         trim: true,
 
     },
     addressDetails: {
         type: mongoose.Schema.Types.ObjectId,
-        required: true,
         ref: "Address"
     },
     products: [{

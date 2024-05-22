@@ -11,7 +11,7 @@ const addressSchema = new mongoose.Schema({
         type: Number,
         trim: true
     },
-    mobile: {
+    mobileNumber: {
         type: Number,
         required: [true, 'Mobile number is required'],
         trim: true
