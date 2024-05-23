@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
     mobileNumber: {
-        type: Number, 
+        type: Number,
         required: [true, 'Mobile number is required'],
         unique: [true, 'Mobile number should be unique'],
     },
@@ -37,6 +37,16 @@ const userSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "UserCart"
     }],
+    role: {
+        type: String,
+        enum: ['user', 'seller', 'admin'],
+        required: true
+    },
+    status: {
+        type: String,
+        enum: ['pending', 'verified', 'approved'],
+        default: 'pending'
+    },
     token: {
         type: String
     },
@@ -45,6 +55,9 @@ const userSchema = new mongoose.Schema({
         type: Date
     },
     image: {
+        type: String
+    },
+    brandImage: {
         type: String
     }
 

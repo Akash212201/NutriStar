@@ -6,6 +6,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoMdArrowDropdown, IoMdHelpBuoy } from "react-icons/io";
 import logo from '../assests/logo.svg'
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -62,10 +63,11 @@ const Header = () => {
                     </div>
 
                     <MdOutlineShoppingBag className='text-[#FCAE2A]  text-[24px] mr-2' />
-
+                    <Link to="/login">
                     <div className='flex justify-center items-center'>
                         <FaUserAlt className='text-[#FCAE2A]  text-[24px] mr-2' /> Login/Register
                     </div>
+                    </Link>
                 </div>
             </div>
                 <div className='lg:hidden flex justify-between items-center border py-1 px-2 rounded-full border-[#b2b2b2] mb-2 mx-2 text-[14px]'>

@@ -7,7 +7,7 @@ const router = express.Router();
 // const { getCategories, groupcategory, groupcategoryid, 
 //     groupcategorysort, createCategory, getCategory, 
 //     categoryPageDetails } = require("../controllers/category")
-// const { auth, isCustomer, isAdmin } = require("../middlewares/auth")
+ const { auth, isCustomer, isAdmin,isSeller } = require("../middlewares/Auth")
 // const { updateProfile, deleteProfile, getPurchasedProducts, updateDisplayPicture, 
 //     getAllUserDetails, getorders, getallusers, instructorStats, piechartdashboard, 
 //     linechartdashboard, barchartdashboard } = require("../controllers/profile");
